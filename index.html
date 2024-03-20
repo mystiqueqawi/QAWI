@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mystique Qawi's Islamic Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="images/quran.png" type="image/x-icon" />
+
+  <!-- Adding  Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Qawi</a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars-progress"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="services">Services</a></li>
+      <li><a href="contact">Contact</a></li>
+    </div>
+  </header>
+
+  <div class="bottom-header-box">
+    <h1>QAWI</h1>
+
+
+  </div>
+
+  <div class="bottom-islam-box">
+    <div class="text-site">
+      <h1 class="islam">ABOUT</h1>
+      <h1 class="islam2">ISLAM</h1>
+    </div>
+
+    <div class="box-class"> <a href="pages/t_knowledge.html">
+        <div class="box1">
+          <div class="knowledge">Knowledge</div>
+        </div>
+      </a> <a href="pages/t_evidence.html">
+        <div class="box2">
+          <div class="evidence">Eevidence</div>
+        </div>
+      </a> <a href="pages/t_content.html">
+        <div class="box3">
+          <div class="content">Content</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!--new box for debates-->
+
+  <div class="bottom-debate-box">
+    <div class="debate-text-site">
+      <h1 class="for">FOR</h1>
+      <h1 class="debates">DEBATES</h1>
+    </div>
+
+    <div class="debate-box-class"> <a href="pages/t_defending.html">
+        <div class="debate-box1">
+          <div class="defending">DEFENDING</div>
+        </div>
+      </a> <a href="pages/t_humans.html">
+        <div class="debate-box2">
+          <div class="humans">HUMANS</div>
+        </div>
+      </a> <a href="pages/t_attacking.html">
+        <div class="debate-box3">
+          <div class="attacking">ATTACKING</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer_bottom">All rights reserved by <span><a href="https://www.tiktok.com/@mystiqueqawi"
+          target="_blank">
+          Qawi</a></span> 2023-2024 ❘ Islamic Library</div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector(".toggle_btn");
+    const toggleBtnIcon = document.querySelector(".toggle_btn i");
+    const dropDownMenu = document.querySelector(".dropdown_menu");
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle("open");
+      const isOpen = dropDownMenu.classList.contains("open");
+
+      toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars-progress";
+    };
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

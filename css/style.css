@@ -1,0 +1,520 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #363753;
+}
+li {
+  list-style: none;
+}
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #dfe3ee;
+  font-size: 20px;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: #42446e;
+  z-index: 99;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+.navbar .links a:hover {
+  color: #5cd2c6;
+}
+.navbar .toggle_btn {
+  color: #dfe3ee;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.action_btn {
+  background-color: #5cd2c6;
+  color: #363753;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 80px;
+  height: 0;
+  width: 300px;
+  background: rgb(43, 43, 49);
+  backdrop-filter: blur (15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 310px;
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu li a:hover {
+  color: #5cd2c6;
+}
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dropdown_menu .action_btn:hover {
+  color: #363753;
+}
+
+.bottom-header-box {
+  height: 400px;
+  background-image: url("https://images.unsplash.com/photo-1507904139316-3c7422a97a49?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  top: 10rem;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+.bottom-header-box h1 {
+  text-align: center;
+  color: #7efee5;
+  font-size: 120px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+.bottom-islam-box {
+  height: 800px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20rem;
+  border-radius: 20px;
+  background-color: #282841;
+}
+.text-site {
+  padding-top: 4rem;
+}
+.islam {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+}
+.islam2 {
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: "Inter", sans-serif;
+}
+
+.box-class {
+  text-align: center;
+  height: 32rem;
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box1 {
+  border-radius: 20px;
+  width: 350px;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/2449510/pexels-photo-2449510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  transition-duration: 0.3s;
+}
+.box1:hover {
+  margin-left: 30px;
+  margin-top: -30px;
+}
+.knowledge {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.box2 {
+  border-radius: 20px;
+  width: 350px;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://iahmedrifat.github.io/startup/al-aqsa-1233827_640.jpg");
+  transition-duration: 0.3s;
+}
+.box2:hover {
+  margin-top: -30px;
+}
+.evidence {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.box3 {
+  border-radius: 20px;
+  width: 350px;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/5988921/pexels-photo-5988921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  transition-duration: 0.3s;
+}
+.box3:hover {
+  margin-top: -30px;
+  margin-right: 30px;
+}
+.content {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.bottom-debate-box {
+  height: 800px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 10rem;
+  border-radius: 20px;
+  background-color: #282841;
+}
+.debate-text-site {
+  padding-top: 4rem;
+}
+.for {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+}
+.debates {
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+  font-family: "Inter", sans-serif;
+}
+
+.debate-box-class {
+  text-align: center;
+  height: 32rem;
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.debate-box1 {
+  border-radius: 20px;
+  width: 350px;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/12039709/pexels-photo-12039709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  transition-duration: 0.3s;
+}
+.debate-box1:hover {
+  margin-left: 30px;
+  margin-top: -30px;
+}
+.defending {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.debate-box2 {
+  border-radius: 20px;
+  width: 350px;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition-duration: 0.3s;
+  background-image: url("https://images.pexels.com/photos/17753294/pexels-photo-17753294/free-photo-of-worshippers-in-mosque.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.debate-box2:hover {
+  margin-top: -30px;
+}
+.humans {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.debate-box3 {
+  border-radius: 20px;
+  width: 350px;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://cdn.britannica.com/08/241108-050-5C4E2233/Paganism-Mithras-slaying-bull-bas-relief-Rome.jpg");
+  transition-duration: 0.3s;
+}
+.debate-box3:hover {
+  margin-top: -30px;
+  margin-right: 30px;
+}
+.attacking {
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.footer {
+  background-color: #42446e;
+  height: 30rem;
+  margin-top: 10rem;
+  position: relative;
+}
+.footer_bottom {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 17px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.footer_bottom span {
+  text-decoration: underline;
+}
+
+/* MEDIA EDIT SECTION
+
+@media (max-width: 1364px) {
+  .box-class .debate-box-class {
+    height: 30rem;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .box1 .debate-box1 {
+    width: 13rem;
+  }
+  .box2 .debate-box2 {
+    width: 15rem;
+  }
+  .box3 .debate-box3 {
+    width: 15rem;
+  }
+} !*/
+@media (max-width: 1050px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+  .box-class {
+    height: 30rem;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .debate-box-class {
+    height: 30rem;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .box1 {
+    width: 15rem;
+  }
+  .debate-box1 {
+    width: 15rem;
+  }
+  .box2 {
+    width: 15rem;
+  }
+  .debate-box2 {
+    width: 15rem;
+  }
+  .box3 {
+    width: 15rem;
+  }
+  .debate-box3 {
+    width: 15rem;
+  }
+  .navbar .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+    z-index: 100;
+  }
+}
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+  .bottom-header-box h1 {
+    font-size: 80px;
+  }
+  .bottom-islam-box {
+    height: 118rem;
+  }
+  .bottom-debate-box {
+    height: 118rem;
+  }
+  .box-class {
+    flex-direction: column;
+    align-items: center;
+    height: 100rem;
+  }
+  .debate-box-class {
+    flex-direction: column;
+    align-items: center;
+    height: 100rem;
+  }
+  .box1 {
+    height: 32rem;
+    width: 20rem;
+  }
+  .debate-box1 {
+    height: 32rem;
+    width: 20rem;
+  }
+  .box2 {
+    height: 32rem;
+    width: 20rem;
+  }
+  .debate-box2 {
+    height: 32rem;
+    width: 20rem;
+  }
+  .box3 {
+    height: 32rem;
+    width: 20rem;
+  }
+  .debate-box3 {
+    height: 32rem;
+    width: 20rem;
+  }
+}
+@media (max-width: 400px) {
+  .bottom-header-box h1 {
+    font-size: 65px;
+  }
+  .bottom-header-box h2 {
+    font-size: 13px;
+  }
+  .bottom-islam-box {
+    height: 76.5rem;
+  }
+  .bottom-debate-box {
+    height: 76.5rem;
+  }
+  .islam2 {
+    font-size: 50px;
+  }
+  .debates {
+    font-size: 50px;
+  }
+  .box-class {
+    flex-direction: column;
+    align-items: center;
+    height: 60rem;
+  }
+  .debate-box-class {
+    flex-direction: column;
+    align-items: center;
+    height: 60rem;
+  }
+  .box1 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .debate-box1 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .knowledge {
+    font-size: 25px;
+  }
+  .defending {
+    font-size: 25px;
+  }
+  .box2 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .debate-box2 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .evidence {
+    font-size: 25px;
+  }
+  .humans {
+    font-size: 25px;
+  }
+  .box3 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .debate-box3 {
+    height: 18rem;
+    width: 13rem;
+  }
+  .content {
+    font-size: 25px;
+  }
+  .attacking {
+    font-size: 25px;
+  }
+}
